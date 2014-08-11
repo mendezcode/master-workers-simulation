@@ -74,8 +74,9 @@ supervisor(State) when is_record(State, state) ->
                     supervisor(State)
             end;
         initialize ->
-            NewIndex = start_masters(State#state.masters, State#state.workers, State#state.master_index) - 1, % already increments index
-            NewState = State#state{master_index=NewIndex},
+            % [1] already increments index
+            NewIndex = start_masters(State#state.masters, State#state.workers, State#state.master_index) - 1, % [1]
+            NewState = State#state{master_index=NewIndex}, 
             supervisor(NewState);
         _ ->
             supervisor(State)
