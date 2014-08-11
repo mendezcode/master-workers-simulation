@@ -1,0 +1,14 @@
+
+@author Ernesto Méndez <mendezcode@gmail.com>
+@copyright 2014 Ernesto Méndez
+@version 1.0.0
+@title Master and Workers Simulation
+
+@doc
+
+This is a sample erlang application to simulate masters and worker processes
+that finish their task in a random amount of time.
+
+The project has no particular purpose, other than learning. In the source,
+there are some sample snippets on how to use edoc, type and spec declarations,
+as well as general erlang code with process monitors and links.

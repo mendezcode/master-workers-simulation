@@ -1,0 +1,8 @@
+.DS_Store
+.git-local
+.git-remote
+*.beam
+*.dump
+update.sh
+doc/
+ebin/
