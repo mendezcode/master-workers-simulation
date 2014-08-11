@@ -71,3 +71,7 @@ Originally, `random:uniform/0` uses the process dictionary, which means that if 
 function is called multiple times on the same process, it will inherently create the
 same random number, hence the process approach implemented herein, which
 creates different numbers regardless from the process on wich they are requested.
+
+## License
+
+MIT
